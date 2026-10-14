@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lamb Ascension Engine — Showcase</title>
+<meta name="description" content="Lead acquisition and outreach automation for small service businesses, built by Dylan Lamb.">
+<link rel="stylesheet" href="styles.css"></head>
+<body>
+<header class="nav"><div class="wrap"><span class="logo">Lamb Ascension <b>Engine</b></span>
+<nav><a href="#features">Features</a><a href="#architecture">Architecture</a><a href="#flow">Flow</a><a href="#demo">Demo</a><a href="#stack">Stack</a></nav></div></header>
+
+<section class="hero"><div class="wrap">
+<p class="eyebrow">Full-stack project by Dylan Lamb</p>
+<h1>Lead acquisition &amp; outreach automation for small service businesses</h1>
+<p class="lead">Finds local prospects through Google Places, scores how well each one fits, and runs outreach sequences that require the owner's approval before any first contact. A background worker handles follow-ups and reply sync; a Sentinel checker guards do-not-contact rules, bounces, and worker health.</p>
+<div class="cta"><a class="btn" href="https://www.linkedin.com/in/dylan-lamb-8b9321191/">Connect on LinkedIn</a><a class="btn ghost" href="https://lambascension.com">lambascension.com</a></div>
+<p class="note">Production source is private — code walkthrough available on request.</p>
+</div></section>
+
+<section id="features"><div class="wrap"><h2>Features</h2><div class="grid">
+<div class="card"><h3>Prospect discovery</h3><p>Searches local businesses by vertical and area via the Google Places API.</p></div>
+<div class="card"><h3>Fit scoring</h3><p>Rates each prospect from research data. Never invents revenue, ad spend, or lead counts.</p></div>
+<div class="card"><h3>Owner approval</h3><p>No first contact goes out until the business owner approves the sequence.</p></div>
+<div class="card"><h3>Background worker</h3><p>Sends scheduled follow-ups and syncs replies into each prospect's timeline.</p></div>
+<div class="card"><h3>Sentinel</h3><p>Read-only invariant checks for do-not-contact, bounces, and worker health — reports, never silently auto-fixes.</p></div>
+<div class="card"><h3>CI checks</h3><p>GitHub Actions runs Sentinel in CI, on a schedule, and after each deploy.</p></div>
+</div></div></section>
+
+<section id="architecture"><div class="wrap"><h2>Architecture</h2>
+<div class="arch">
+<div class="node">React 19 + TanStack Start UI</div><div class="arrow">→</div>
+<div class="node">Node API on Vercel<small>better-auth</small></div><div class="arrow">→</div>
+<div class="node">PostgreSQL<small>Kysely · pg · PGlite (dev)</small></div>
+</div>
+<div class="arch sub">
+<div class="node alt">Google Places API<small>discovery</small></div>
+<div class="node alt">Background worker<small>follow-ups · reply sync</small></div>
+<div class="node alt">Sentinel<small>DNC · bounces · health</small></div>
+<div class="node alt">GitHub Actions<small>CI · post-deploy checks</small></div>
+</div></div></section>
+
+<section id="flow"><div class="wrap"><h2>Outreach flow</h2>
+<ol class="flow">
+<li><b>Discover</b><span>Google Places</span></li>
+<li><b>Score fit</b><span>research-based rating</span></li>
+<li><b>Draft sequence</b><span>queued, not sent</span></li>
+<li class="gate"><b>Owner approves</b><span>required before first contact</span></li>
+<li><b>Send &amp; follow up</b><span>background worker</span></li>
+<li><b>Sync replies</b><span>prospect timeline</span></li>
+</ol>
+<p class="muted">Sentinel blocks any send to do-not-contact or bounced addresses.</p></div></section>
+
+<section id="demo"><div class="wrap"><h2>UI illustration</h2>
+<div class="sample-tag">SAMPLE DATA — fictional businesses for illustration only</div>
+<div class="mock"><div class="mock-bar"><span></span><span></span><span></span> Prospects · Plumbing · Example City</div>
+<table><thead><tr><th>Business</th><th>Vertical</th><th>Fit</th><th>Status</th></tr></thead><tbody>
+<tr><td>Example Pipe Co.</td><td>Plumbing</td><td><i class="fit hi">High</i></td><td><i class="st wait">Awaiting owner approval</i></td></tr>
+<tr><td>Sample Roofing LLC</td><td>Roofing</td><td><i class="fit md">Medium</i></td><td><i class="st ok">Approved · follow-up 2</i></td></tr>
+<tr><td>Demo Air &amp; Heat</td><td>HVAC</td><td><i class="fit hi">High</i></td><td><i class="st ok">Reply synced</i></td></tr>
+<tr><td>Placeholder Med Spa</td><td>Med spa</td><td><i class="fit lo">Low</i></td><td><i class="st blk">Do-not-contact (Sentinel)</i></td></tr>
+</tbody></table></div></div></section>
+
+<section id="stack"><div class="wrap"><h2>Tech stack</h2><div class="chips">
+<span>TypeScript</span><span>React 19</span><span>TanStack Start</span><span>TanStack Router</span><span>TanStack Query</span><span>Vite</span><span>Tailwind CSS 4</span><span>Radix UI</span><span>PostgreSQL</span><span>Kysely</span><span>PGlite</span><span>better-auth</span><span>Vercel</span><span>GitHub Actions</span>
+</div></div></section>
+
+<footer><div class="wrap">© Dylan Lamb · <a href="https://www.linkedin.com/in/dylan-lamb-8b9321191/">LinkedIn</a> · <a href="https://lambascension.com">lambascension.com</a> · <a href="https://github.com/dylanlamb19/lamb-ascension-engine-showcase">GitHub</a></div></footer>
+</body></html>
