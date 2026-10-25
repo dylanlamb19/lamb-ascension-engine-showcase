@@ -6,7 +6,7 @@ This is the public showcase for the Lamb Ascension Engine, built by [Dylan Lamb]
 
 **Live demo:** see the repo's website link · **Company:** [lambascension.com](https://lambascension.com)
 
-> The production source is private. A code walkthrough is available on request — reach out on [LinkedIn](https://www.linkedin.com/in/dylan-lamb-8b9321191/).
+> The production source is private and available on request. A code walkthrough is available too — reach out on [LinkedIn](https://www.linkedin.com/in/dylan-lamb-8b9321191/).
 
 ## Overview
 
@@ -74,9 +74,20 @@ flowchart TD
 
 Sentinel is a read-only invariant layer. It checks that no do-not-contact or bounced address is queued, that the worker is running and healthy, and that data stays consistent. It **reports** violations (in CI, on a schedule, and after deploys) rather than auto-fixing them, so a human decides the fix.
 
+## Engineering highlights
+
+- Spend is reserved in a SQL transaction before any paid provider call, with per-user and app-wide daily caps.
+- Every contact field keeps its provenance (verified, found publicly, enriched, owner provided, unknown).
+- The worker uses a heartbeat lease so overlapping runs can't double-send.
+- CI runs type checking, linting, tests, and a production build on every pull request.
+
 ## Demo site
 
 `index.html` + `styles.css` in this repo — a static page explaining the engine. All prospect names and figures shown in it are **fictional sample data**.
+
+## Work with me
+
+I'm available for web design and automation work for small businesses. Source code for this project is available on request. Contact: [LinkedIn](https://www.linkedin.com/in/dylan-lamb-8b9321191).
 
 ---
 © Dylan Lamb · [LinkedIn](https://www.linkedin.com/in/dylan-lamb-8b9321191/) · [lambascension.com](https://lambascension.com)
