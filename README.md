@@ -2,6 +2,8 @@
 
 **Lead acquisition and outreach automation for small service businesses.**
 
+[![Ascension OS](https://img.shields.io/badge/Ascension%20OS-by%20Dylan%20Lamb-0A1630?style=for-the-badge&labelColor=0A1630&color=3B82F6)](https://lambascension.com) [![Site](https://img.shields.io/badge/lambascension.com-visit-3B82F6?style=for-the-badge&labelColor=0A1630)](https://lambascension.com) [![LinkedIn](https://img.shields.io/badge/LinkedIn-connect-3B82F6?style=for-the-badge&logo=linkedin&labelColor=0A1630)](https://www.linkedin.com/in/dylan-lamb-8b9321191/)
+
 This is the public showcase for the Lamb Ascension Engine, built by [Dylan Lamb](https://www.linkedin.com/in/dylan-lamb-8b9321191/). The production source code is private; this repo holds an overview, the architecture, and a static demo site that uses **sample data only**.
 
 **Live demo:** [dylanlamb19.github.io/lamb-ascension-engine-showcase](https://dylanlamb19.github.io/lamb-ascension-engine-showcase/)
@@ -10,7 +12,7 @@ This is the public showcase for the Lamb Ascension Engine, built by [Dylan Lamb]
 
 ## Overview
 
-Small service businesses (roofing, HVAC, plumbing, med spa and similar) need a steady flow of qualified local leads, but cold outreach is easy to get wrong. The engine finds local prospects, scores how well each one fits, and runs outreach sequences that **require the owner's approval before any first contact**. A background worker handles follow-ups and reply syncing, and a Sentinel layer watches system invariants.
+Small service businesses (roofing, HVAC, landscaping, med spa and similar) need a steady flow of qualified local leads, but cold outreach is easy to get wrong. The engine finds local prospects, scores how well each one fits, and runs outreach sequences that **require the owner's approval before any first contact**. A background worker handles follow-ups and reply syncing, and a Sentinel layer watches system invariants.
 
 ## Features
 
@@ -87,7 +89,7 @@ Sentinel is a read-only invariant layer. It checks that no do-not-contact or bou
 
 ## Work with me
 
-I'm available for web design and automation work for small businesses. Source code for this project is available on request. Contact: [LinkedIn](https://www.linkedin.com/in/dylan-lamb-8b9321191).
+I build AI agents and automation tools under the Ascension OS name, and I'm open to remote software engineering roles and automation projects for small businesses. Source code for this project is available on request. See more at [lambascension.com](https://lambascension.com) or reach out on [LinkedIn](https://www.linkedin.com/in/dylan-lamb-8b9321191).
 
 ---
-© Dylan Lamb · [LinkedIn](https://www.linkedin.com/in/dylan-lamb-8b9321191/) · [Live demo](https://dylanlamb19.github.io/lamb-ascension-engine-showcase/)
+© Dylan Lamb · [lambascension.com](https://lambascension.com) · [LinkedIn](https://www.linkedin.com/in/dylan-lamb-8b9321191/) · [Live demo](https://dylanlamb19.github.io/lamb-ascension-engine-showcase/)
