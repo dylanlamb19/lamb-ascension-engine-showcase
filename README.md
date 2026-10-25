@@ -4,7 +4,7 @@
 
 This is the public showcase for the Lamb Ascension Engine, built by [Dylan Lamb](https://www.linkedin.com/in/dylan-lamb-8b9321191/). The production source code is private; this repo holds an overview, the architecture, and a static demo site that uses **sample data only**.
 
-**Live demo:** see the repo's website link · **Company:** [lambascension.com](https://lambascension.com)
+**Live demo:** [dylanlamb19.github.io/lamb-ascension-engine-showcase](https://dylanlamb19.github.io/lamb-ascension-engine-showcase/)
 
 > The production source is private and available on request. A code walkthrough is available too — reach out on [LinkedIn](https://www.linkedin.com/in/dylan-lamb-8b9321191/).
 
@@ -90,4 +90,4 @@ Sentinel is a read-only invariant layer. It checks that no do-not-contact or bou
 I'm available for web design and automation work for small businesses. Source code for this project is available on request. Contact: [LinkedIn](https://www.linkedin.com/in/dylan-lamb-8b9321191).
 
 ---
-© Dylan Lamb · [LinkedIn](https://www.linkedin.com/in/dylan-lamb-8b9321191/) · [lambascension.com](https://lambascension.com)
+© Dylan Lamb · [LinkedIn](https://www.linkedin.com/in/dylan-lamb-8b9321191/) · [Live demo](https://dylanlamb19.github.io/lamb-ascension-engine-showcase/)
