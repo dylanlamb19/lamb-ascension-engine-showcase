@@ -1,6 +1,6 @@
 # Lamb Ascension Engine — Showcase
 
-**Lead acquisition and outreach automation for small service businesses.**
+**AI systems for businesses everywhere.**
 
 [![Ascension OS](https://img.shields.io/badge/Ascension%20OS-by%20Dylan%20Lamb-0A1630?style=for-the-badge&labelColor=0A1630&color=3B82F6)](https://lambascension.com) [![Site](https://img.shields.io/badge/lambascension.com-visit-3B82F6?style=for-the-badge&labelColor=0A1630)](https://lambascension.com) [![LinkedIn](https://img.shields.io/badge/LinkedIn-connect-3B82F6?style=for-the-badge&logo=linkedin&labelColor=0A1630)](https://www.linkedin.com/in/dylan-lamb-8b9321191/)
 
@@ -12,11 +12,11 @@ This is the public showcase for the Lamb Ascension Engine, built by [Dylan Lamb]
 
 ## Overview
 
-Small service businesses (roofing, HVAC, landscaping, med spa and similar) need a steady flow of qualified local leads, but cold outreach is easy to get wrong. The engine finds local prospects, scores how well each one fits, and runs outreach sequences that **require the owner's approval before any first contact**. A background worker handles follow-ups and reply syncing, and a Sentinel layer watches system invariants.
+Businesses in professional services, software, retail, and other industries need a steady flow of qualified leads, but cold outreach is easy to get wrong. The engine finds prospects, scores how well each one fits, and runs outreach sequences that **require the owner's approval before any first contact**. A background worker handles follow-ups and reply syncing, and a Sentinel layer watches system invariants.
 
 ## Features
 
-- **Prospect discovery** — finds local businesses by vertical and area through the Google Places API.
+- **Prospect discovery** — finds businesses by industry through the Google Places API.
 - **Fit scoring** — rates each prospect from research data; it never invents revenue, ad-spend, or lead-count figures.
 - **Owner-approved outreach** — sequences are drafted and queued, but nothing is sent to a new contact until the owner approves.
 - **Background worker** — sends scheduled follow-ups and syncs replies back into each prospect's timeline.
@@ -66,7 +66,7 @@ flowchart TD
 
 ## Data model (summary)
 
-- **Prospects** — business identity, vertical, location, source (Google Places), fit rating.
+- **Prospects** — business identity, industry, location, source (Google Places), fit rating.
 - **Sequences & steps** — outreach messages, schedule, approval state.
 - **Messages / replies** — sent items and synced replies per prospect.
 - **Suppression** — do-not-contact and bounced addresses, enforced before any send.
@@ -89,7 +89,7 @@ Sentinel is a read-only invariant layer. It checks that no do-not-contact or bou
 
 ## Work with me
 
-I build AI agents and automation tools under the Ascension OS name, and I'm open to remote software engineering roles and automation projects for small businesses. Source code for this project is available on request. See more at [lambascension.com](https://lambascension.com) or reach out on [LinkedIn](https://www.linkedin.com/in/dylan-lamb-8b9321191).
+I build AI agents and automation tools under the Ascension OS name, and I'm open to remote software engineering roles and automation projects for businesses everywhere. Source code for this project is available on request. See more at [lambascension.com](https://lambascension.com) or reach out on [LinkedIn](https://www.linkedin.com/in/dylan-lamb-8b9321191).
 
 ---
 © Dylan Lamb · [lambascension.com](https://lambascension.com) · [LinkedIn](https://www.linkedin.com/in/dylan-lamb-8b9321191/) · [Live demo](https://dylanlamb19.github.io/lamb-ascension-engine-showcase/)
